@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product — Cheniflora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-decor-1" aria-hidden="true"></div>
+  <div class="bg-decor-2" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="logo">
+      <span class="logo-icon">🌸</span>
+      <span class="logo-text">Cheniflora</span>
+    </button>
+    <button class="nav-toggle" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-links">
+      <a href="shop.html">Shop</a>
+      <a href="build-gift.html">Build a Gift</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- Search Bar -->
+    <div class="nav-search">
+      <input type="text" id="navSearchInput" placeholder="Search flowers, keychains...">
+      <button id="navSearchBtn" aria-label="Search">🔍</button>
+    </div>
+    <div class="nav-icons">
+      <button class="icon-btn wish-btn" aria-label="Wishlist">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="badge wish-badge">0</span>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge cart-badge">0</span>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme" data-theme="light">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a> / <a href="shop.html">Shop</a> / <span id="crumbName">Product</span></div>
+  </div>
+</div>
+
+<section style="padding-top:50px;">
+  <div class="container detail-layout">
+    <div class="detail-photo"><img id="detailImg" src="" alt=""></div>
+    <div>
+      <span class="eyebrow" id="detailTag">Bouquet</span>
+      <h1 id="detailName" style="font-size:2.2rem;">Product name</h1>
+      <div class="detail-price" id="detailPrice">₹0</div>
+      <p id="detailDesc">Description loading...</p>
+      <div class="qty-row">
+        <button class="count-btn" id="dQtyMinus">−</button>
+        <span id="dQtyVal" style="font-weight:600;">1</span>
+        <button class="count-btn" id="dQtyPlus">+</button>
+        <button class="btn btn-primary" id="dAddCart">Add to Cart</button>
+        <button class="card-heart" style="position:static; width:44px; height:44px;" id="dWishBtn">♥</button>
+      </div>
+      <p style="font-size:.82rem;">Hand-twisted to order · ships in 2–3 days · free message card included</p>
+      <a href="build-gift.html" class="btn btn-secondary" style="margin-top:24px;">Customise this in Build a Gift →</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream-deep);">
+  <div class="container">
+    <div class="section-head center"><span class="eyebrow">You Might Also Like</span><h2>More to pair with it</h2></div>
+    <div class="bento">
+      <a href="product.html?p=keychain-bear" class="card"><img src="assets/keychain_4.jpg" alt="Bear keychain"><button class="card-heart" data-id="keychain-bear">♥</button><span class="card-tag">Keychain</span><div class="card-info"><div class="name">Bear Keychain</div><div class="price">₹50</div></div></a>
+      <a href="product.html?p=single-stem" class="card"><img src="assets/flowers_mixed.jpg" alt="Single stem"><button class="card-heart" data-id="single-stem">♥</button><span class="card-tag">Single Stem</span><div class="card-info"><div class="name">Single Stem Flower</div><div class="price">₹80</div></div></a>
+      <a href="product.html?p=flowerpot" class="card wide"><img src="assets/flowerpot.jpg" alt="Daisy pot"><button class="card-heart" data-id="flowerpot">♥</button><span class="card-tag">Decor</span><div class="card-info"><div class="name">Desk Daisy Pot</div><div class="price">₹250</div></div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-grid">
+    <div><div class="foot-logo">Cheniflora</div><p style="color:#D8B9C5; font-size:.86rem; max-width:260px;">Handmade chenille flowers and keepsakes that never fade.</p></div>
+    <div><h4>Shop</h4><a href="shop.html">All Products</a><a href="build-gift.html">Build a Gift</a><a href="occasions.html">Occasions</a></div>
+    <div><h4>Company</h4><a href="story.html">Our Story</a><a href="contact.html">Contact</a></div>
+    <div><h4>Stay in touch</h4><form class="foot-form" onsubmit="event.preventDefault();"><input type="email" placeholder="Your email" required><button class="btn btn-primary btn-sm" type="submit">Subscribe</button></form></div>
+  </div>
+  <div class="container foot-bottom">© 2026 Cheniflora. Handmade in India.</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/910000000000" target="_blank">💬</a>
+<script src="main.js"></script>
+<script>
+const PRODUCTS = {
+  'lily-bouquet': {name:'Blush Lily Bouquet', tag:'Bouquet', price:420, img:'assets/bouquet_pink.jpg', desc:'A full hand-twisted lily bouquet, five stems wrapped in soft white netting. Never wilts, never needs water — just looks like the day it was made.'},
+  'blue-bouquet': {name:'Indigo Lily Stems', tag:'Bouquet', price:300, img:'assets/bouquet_blue.jpg', desc:'Three rich indigo and sky-blue lilies with hand-cut leaves, ready to sit in any vase you already own.'},
+  'single-stem': {name:'Single Stem Flower', tag:'Single Stem', price:80, img:'assets/flowers_mixed.jpg', desc:'One hand-twisted chenille flower, your choice of colour. Small enough to slip into a card, big enough to notice.'},
+  'flowerpot': {name:'Desk Daisy Pot', tag:'Decor', price:250, img:'assets/flowerpot.jpg', desc:'A chenille daisy planted in a tiny fabric pot — a permanent plant for a desk that gets no sunlight.'},
+  'keychain-bear': {name:'Bear Keychain', tag:'Keychain', price:50, img:'assets/keychain_4.jpg', desc:'A pocket-sized chenille bear face on a keyring. Soft, fuzzy, and surprisingly sturdy on a daily keychain.'},
+  'keychain-football': {name:'Football Keychain', tag:'Keychain', price:45, img:'assets/keychain_2.jpg', desc:'Mini hand-rolled football charms in classic black-and-white or coloured patterns.'},
+  'keychain-fish': {name:'Goldfish Keychain', tag:'Keychain', price:45, img:'assets/keychain_1.jpg', desc:'A cheerful little chenille fish, hand-shaped with bead eyes. Available in blue or orange.'},
+  'keychain-octopus': {name:'Octopus Keychain', tag:'Keychain', price:50, img:'assets/keychain_3.jpg', desc:'A round, big-eyed chenille octopus charm — soft, silly, and impossible not to smile at.'},
+  'keychain-sunflower': {name:'Sunflower Keychain', tag:'Keychain', price:45, img:'assets/keychain_sunflower.png', desc:'Bright and cheerful double sunflower charms on a keyring. Crafted with soft, hand-spun yellow yarn.'},
+  'keychain-lily': {name:'Lily Keychain', tag:'Keychain', price:45, img:'assets/keychain_lily.png', desc:'A stunning pink star lily charm keychain with silver detailing, adding a touch of elegance to any keyring.'},
+  'keychain-evileye': {name:'Evil Eye Keychain', tag:'Keychain', price:45, img:'assets/keychain_evileye.png', desc:'A vibrant blue evil eye flower charm designed to bring good luck and style wherever you go.'},
+  'keychain-daisy': {name:'Daisy Keychain', tag:'Keychain', price:45, img:'assets/keychain_daisy.png', desc:'A cute pink daisy keychain charm with a bright white and yellow center. Pocket-sized and lightweight.'},
+  'wrap-pink': {name:'Single Lily, Gift Wrapped', tag:'Gift Wrapped', price:130, img:'assets/wrap_1.jpg', desc:'One blush lily stem, wrapped in pink cellophane with a satin ribbon — ready to hand over as-is.'},
+  'wrap-sunflower': {name:'Sunflower Stem, Wrapped', tag:'Gift Wrapped', price:130, img:'assets/wrap_2.jpg', desc:'A bright chenille sunflower with two daisy accents, wrapped and ribbon-tied.'},
+  'wrap-maroon': {name:'Wine Lily, Wrapped', tag:'Gift Wrapped', price:130, img:'assets/wrap_3.jpg', desc:'A deep wine-coloured velvet lily wrapped in black paper with a message tag — built for a bold gesture.'},
+  'wrap-blue': {name:'Sky Blue Stem, Wrapped', tag:'Gift Wrapped', price:130, img:'assets/wrap_4.jpg', desc:'Soft sky-blue chenille flowers with green leaf accents, wrapped in frosted paper and ribbon.'},
+  'wrap-yellow-lily': {name:'Yellow Lily, Gift Wrapped', tag:'Single Stem Wrapped', price:140, img:'assets/wrap_yellow_lily.png', desc:'A gorgeous yellow chenille lily hand-wrapped in cream paper with a bright yellow ribbon bow — elegant and one of a kind.'},
+  'wrap-blue-lily': {name:'Blue Lily, Gift Wrapped', tag:'Single Stem Wrapped', price:140, img:'assets/wrap_blue_lily.png', desc:'A striking sky-blue chenille lily wrapped in heart-print white paper with a soft blue satin bow — perfect for any occasion.'},
+  'wrap-purple-lily': {name:'Purple Lily, Gift Wrapped', tag:'Single Stem Wrapped', price:140, img:'assets/wrap_purple_lily.jpg', desc:'A delicate double lavender lily wrapped in matching purple paper with a white organza bow — subtle, romantic, and unforgettable.'},
+  'wrap-sunflower-big': {name:'Sunflower Bouquet, Wrapped', tag:'Single Stem Wrapped', price:200, img:'assets/wrap_sunflower_big.jpg', desc:'A full sunflower with white daisy accents, beautifully wrapped in black and gold paper with a pearl-beaded bow. Statement gifting at its best.'},
+  'bouquet-big-pink': {name:'Pink Lily Premium Bouquet', tag:'Premium Bouquet', price:400, img:'assets/bouquet_big_pink.jpg', desc:'A breathtaking hand-crafted chenille lily bouquet with blossoms, buds, and leaf sprigs, wrapped in layered cream paper with a hot-pink satin ribbon. Our most beautiful single-flower arrangement.'},
+  'bouquet-big-peach': {name:'Peach Lily Grand Bouquet', tag:'Premium Bouquet', price:500, img:'assets/bouquet_big_peach.png', desc:'Five full-bloom peach and coral chenille lilies with baby\'s breath accents, wrapped in luxury kraft newspaper paper with a cream ribbon. The ultimate statement bouquet — handmade, never fading.'},
+  'pot-bear-hearts': {name:'Bear & Hearts Pot', tag:'Desk Decor', price:300, img:'assets/pot_bear_hearts.png', desc:'Two adorable chenille teddy bears peek out from a bouquet of red hearts and pink blooms, all nestled in a fabric-wrapped chocolate pot. The cutest desk companion.'},
+  'pot-sunflower': {name:'Sunflower Desk Pot', tag:'Desk Decor', price:300, img:'assets/pot_sunflower.png', desc:'A bright full-bloom yellow chenille sunflower with green leaves, potted in a chunky ribbed brown planter. Brings a touch of sunshine to any desk or shelf.'},
+  'pot-pink-daisy': {name:'Pink Daisy Desk Pot', tag:'Desk Decor', price:300, img:'assets/pot_pink_daisy.png', desc:'A large vibrant pink chenille daisy with a yellow and white centre, set in a woven tan pot. Lightweight, durable, and endlessly cheerful.'},
+  'pot-blue-hydrangea': {name:'Blue Hydrangea Pot', tag:'Desk Decor', price:300, img:'assets/pot_blue_hydrangea.png', desc:'A lush cluster of sky-blue chenille blooms with white stamens, potted in a tan ribbon-tied planter. Fresh and calming — perfect for your study corner.'},
+  'pot-white-daisy': {name:'White Daisy Desk Pot', tag:'Desk Decor', price:300, img:'assets/pot_white_daisy.png', desc:'A classic white and yellow chenille daisy in a natural woven pot. Simple, elegant, and everlasting — the perfect everyday desk decor.'}
+};
+
+const params = new URLSearchParams(window.location.search);
+const key = params.get('p') || 'lily-bouquet';
+const p = PRODUCTS[key] || PRODUCTS['lily-bouquet'];
+
+document.getElementById('detailImg').src = p.img;
+document.getElementById('detailImg').alt = p.name;
+document.getElementById('detailTag').textContent = p.tag;
+document.getElementById('detailName').textContent = p.name;
+document.getElementById('detailPrice').textContent = '₹' + p.price;
+document.getElementById('detailDesc').textContent = p.desc;
+document.getElementById('crumbName').textContent = p.name;
+document.title = p.name + ' — Cheniflora';
+
+let qty = 1;
+document.getElementById('dQtyMinus').addEventListener('click', () => { qty = Math.max(1, qty-1); document.getElementById('dQtyVal').textContent = qty; });
+document.getElementById('dQtyPlus').addEventListener('click', () => { qty = Math.min(20, qty+1); document.getElementById('dQtyVal').textContent = qty; });
+
+document.getElementById('dAddCart').addEventListener('click', () => {
+  const cartKey = 'cheniflora_cart';
+  let cart = [];
+  try {
+    cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+  } catch (e) {
+    cart = [];
+  }
+
+  const existing = cart.find(item => item.id === key);
+  if (existing) {
+    existing.qty += qty;
+  } else {
+    cart.push({
+      id: key,
+      name: p.name,
+      price: p.price,
+      img: p.img,
+      qty: qty
+    });
+  }
+
+  localStorage.setItem(cartKey, JSON.stringify(cart));
+
+  const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+  localStorage.setItem('cheniflora_cart_count', totalQty);
+  
+  const badge = document.querySelector('.cart-badge');
+  if (badge) badge.textContent = totalQty;
+
+  document.getElementById('dAddCart').textContent = 'Added ✓';
+  setTimeout(() => { document.getElementById('dAddCart').textContent = 'Add to Cart'; }, 1600);
+});
+
+const wishKey = 'cheniflora_wishlist';
+function getWish(){ try { return JSON.parse(localStorage.getItem(wishKey)) || []; } catch(e){ return []; } }
+const wBtn = document.getElementById('dWishBtn');
+if (getWish().includes(key)) wBtn.classList.add('active');
+wBtn.addEventListener('click', () => {
+  let wish = getWish();
+  if (wish.includes(key)) { wish = wish.filter(x=>x!==key); wBtn.classList.remove('active'); }
+  else { wish.push(key); wBtn.classList.add('active'); }
+  localStorage.setItem(wishKey, JSON.stringify(wish));
+  document.querySelector('.wish-badge').textContent = wish.length;
+});
+</script>
+</body>
+</html>

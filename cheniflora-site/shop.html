@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Cheniflora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-decor-1" aria-hidden="true"></div>
+  <div class="bg-decor-2" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="logo">
+      <span class="logo-icon">🌸</span>
+      <span class="logo-text">Cheniflora</span>
+    </button>
+    <button class="nav-toggle" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-links">
+      <a href="shop.html" class="active">Shop</a>
+      <a href="build-gift.html">Build a Gift</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- Search Bar -->
+    <div class="nav-search">
+      <input type="text" id="navSearchInput" placeholder="Search flowers, keychains...">
+      <button id="navSearchBtn" aria-label="Search">🔍</button>
+    </div>
+    <div class="nav-icons">
+      <button class="icon-btn wish-btn" aria-label="Wishlist">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="badge wish-badge">0</span>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge cart-badge">0</span>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme" data-theme="light">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a> / Shop</div>
+    <h1>Shop the full collection</h1>
+    <p style="margin-top:10px;">From ₹40 single stems to ₹450 statement bouquets — every piece hand-twisted to order.</p>
+  </div>
+</div>
+
+<section style="padding-top:50px;">
+  <div class="container shop-layout">
+    <aside class="filter-box">
+      <h4>Category</h4>
+      <div class="filter-group">
+        <span class="filter-chip active">All</span>
+        <span class="filter-chip">Bouquets</span>
+        <span class="filter-chip">Single Stems</span>
+        <span class="filter-chip">Keychains</span>
+        <span class="filter-chip">Decor & Pots</span>
+      </div>
+      <h4>Price</h4>
+      <div class="filter-group">
+        <span class="filter-chip active">Any</span>
+        <span class="filter-chip">Under ₹100</span>
+        <span class="filter-chip">₹100 – ₹300</span>
+        <span class="filter-chip">₹300+</span>
+      </div>
+      <h4>Occasion</h4>
+      <div class="filter-group">
+        <span class="filter-chip active">Any</span>
+        <span class="filter-chip">Birthday</span>
+        <span class="filter-chip">Anniversary</span>
+        <span class="filter-chip">Friendship</span>
+      </div>
+    </aside>
+
+    <div>
+      <div class="premium-grid" data-paginated>
+        <!-- PAGE 1: Flowers (1 to 8) -->
+        <a href="product.html?p=lily-bouquet" class="card">
+          <img src="assets/bouquet_pink.jpg" alt="Pink chenille lily bouquet">
+          <span class="card-tag">Bouquet</span>
+          <button class="card-heart" data-id="lily-bouquet">♥</button>
+          <div class="card-info"><div class="name">Blush Lily Bouquet</div><div class="price">₹420</div></div>
+        </a>
+        <a href="product.html?p=blue-bouquet" class="card">
+          <img src="assets/bouquet_blue.jpg" alt="Blue chenille lily bouquet">
+          <span class="card-tag">Bouquet</span>
+          <button class="card-heart" data-id="blue-bouquet">♥</button>
+          <div class="card-info"><div class="name">Indigo Lily Stems</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=single-stem" class="card">
+          <img src="assets/flowers_mixed.jpg" alt="Single chenille flower stems, mixed colours">
+          <span class="card-tag">Single Stem</span>
+          <button class="card-heart" data-id="single-stem">♥</button>
+          <div class="card-info"><div class="name">Single Stem Flower</div><div class="price">₹80</div></div>
+        </a>
+        <a href="product.html?p=wrap-pink" class="card">
+          <img src="assets/wrap_1.jpg" alt="Pink lily wrapped in pink cellophane with ribbon">
+          <span class="card-tag">Gift Wrapped</span>
+          <button class="card-heart" data-id="wrap-pink">♥</button>
+          <div class="card-info"><div class="name">Single Lily, Gift Wrapped</div><div class="price">₹130</div></div>
+        </a>
+        <a href="product.html?p=wrap-sunflower" class="card">
+          <img src="assets/wrap_2.jpg" alt="Chenille sunflower bouquet wrapped with white ribbon">
+          <span class="card-tag">Gift Wrapped</span>
+          <button class="card-heart" data-id="wrap-sunflower">♥</button>
+          <div class="card-info"><div class="name">Sunflower Stem, Wrapped</div><div class="price">₹130</div></div>
+        </a>
+        <a href="product.html?p=wrap-maroon" class="card">
+          <img src="assets/wrap_3.jpg" alt="Deep maroon chenille lily wrapped in black paper">
+          <span class="card-tag">Gift Wrapped</span>
+          <button class="card-heart" data-id="wrap-maroon">♥</button>
+          <div class="card-info"><div class="name">Wine Lily, Wrapped</div><div class="price">₹130</div></div>
+        </a>
+        <a href="product.html?p=wrap-blue" class="card">
+          <img src="assets/wrap_4.jpg" alt="Light blue chenille flowers wrapped in frosted paper">
+          <span class="card-tag">Gift Wrapped</span>
+          <button class="card-heart" data-id="wrap-blue">♥</button>
+          <div class="card-info"><div class="name">Sky Blue Stem, Wrapped</div><div class="price">₹130</div></div>
+        </a>
+        <a href="product.html?p=wrap-yellow-lily" class="card">
+          <img src="assets/wrap_yellow_lily.png" alt="Yellow lily wrapped in cream paper with yellow ribbon">
+          <span class="card-tag">Single Stem Wrapped</span>
+          <button class="card-heart" data-id="wrap-yellow-lily">♥</button>
+          <div class="card-info"><div class="name">Yellow Lily, Gift Wrapped</div><div class="price">₹140</div></div>
+        </a>
+
+        <!-- PAGE 2: Flowers (9 to 16) -->
+        <a href="product.html?p=wrap-blue-lily" class="card">
+          <img src="assets/wrap_blue_lily.png" alt="Blue lily wrapped in heart-print paper with blue ribbon">
+          <span class="card-tag">Single Stem Wrapped</span>
+          <button class="card-heart" data-id="wrap-blue-lily">♥</button>
+          <div class="card-info"><div class="name">Blue Lily, Gift Wrapped</div><div class="price">₹140</div></div>
+        </a>
+        <a href="product.html?p=wrap-purple-lily" class="card">
+          <img src="assets/wrap_purple_lily.jpg" alt="Purple lily wrapped in lavender paper with white organza bow">
+          <span class="card-tag">Single Stem Wrapped</span>
+          <button class="card-heart" data-id="wrap-purple-lily">♥</button>
+          <div class="card-info"><div class="name">Purple Lily, Gift Wrapped</div><div class="price">₹140</div></div>
+        </a>
+        <a href="product.html?p=wrap-sunflower-big" class="card">
+          <img src="assets/wrap_sunflower_big.jpg" alt="Sunflower bouquet wrapped in black and gold paper with pearl bow">
+          <span class="card-tag">Single Stem Wrapped</span>
+          <button class="card-heart" data-id="wrap-sunflower-big">♥</button>
+          <div class="card-info"><div class="name">Sunflower Bouquet, Wrapped</div><div class="price">₹200</div></div>
+        </a>
+        <a href="product.html?p=bouquet-big-pink" class="card">
+          <img src="assets/bouquet_big_pink.jpg" alt="Pink chenille lily premium bouquet with cream paper and pink ribbon">
+          <span class="card-tag">Premium Bouquet</span>
+          <button class="card-heart" data-id="bouquet-big-pink">♥</button>
+          <div class="card-info"><div class="name">Pink Lily Premium Bouquet</div><div class="price">₹400</div></div>
+        </a>
+        <a href="product.html?p=bouquet-big-peach" class="card">
+          <img src="assets/bouquet_big_peach.png" alt="Large peach multi-lily grand bouquet wrapped in kraft newspaper paper">
+          <span class="card-tag">Premium Bouquet</span>
+          <button class="card-heart" data-id="bouquet-big-peach">♥</button>
+          <div class="card-info"><div class="name">Peach Lily Grand Bouquet</div><div class="price">₹500</div></div>
+        </a>
+        <a href="product.html?p=lily-bouquet-2" class="card">
+          <img src="assets/bouquet_pink.jpg" alt="Pink chenille lily bouquet duplicate">
+          <span class="card-tag">Bouquet</span>
+          <button class="card-heart" data-id="lily-bouquet-2">♥</button>
+          <div class="card-info"><div class="name">Blush Lily Bouquet (Twin)</div><div class="price">₹420</div></div>
+        </a>
+        <a href="product.html?p=blue-bouquet-2" class="card">
+          <img src="assets/bouquet_blue.jpg" alt="Blue chenille lily bouquet duplicate">
+          <span class="card-tag">Bouquet</span>
+          <button class="card-heart" data-id="blue-bouquet-2">♥</button>
+          <div class="card-info"><div class="name">Indigo Lily Stems (Twin)</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=single-stem-2" class="card">
+          <img src="assets/flowers_mixed.jpg" alt="Single chenille flower stems duplicate">
+          <span class="card-tag">Single Stem</span>
+          <button class="card-heart" data-id="single-stem-2">♥</button>
+          <div class="card-info"><div class="name">Single Stem Flower (Twin)</div><div class="price">₹80</div></div>
+        </a>
+
+        <!-- PAGE 3: Keychains (17 to 24) -->
+        <a href="product.html?p=keychain-fish" class="card">
+          <img src="assets/keychain_1.jpg" alt="Chenille fish keychains, blue and orange">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-fish">♥</button>
+          <div class="card-info"><div class="name">Goldfish Keychain</div><div class="price">₹45</div></div>
+        </a>
+        <a href="product.html?p=keychain-football" class="card">
+          <img src="assets/keychain_2.jpg" alt="Chenille football keychains">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-football">♥</button>
+          <div class="card-info"><div class="name">Football Keychain</div><div class="price">₹45</div></div>
+        </a>
+        <a href="product.html?p=keychain-octopus" class="card">
+          <img src="assets/keychain_3.jpg" alt="Pink chenille octopus keychain">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-octopus">♥</button>
+          <div class="card-info"><div class="name">Octopus Keychain</div><div class="price">₹50</div></div>
+        </a>
+        <a href="product.html?p=keychain-bear" class="card">
+          <img src="assets/keychain_4.jpg" alt="Pink chenille bear keychain">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-bear">♥</button>
+          <div class="card-info"><div class="name">Bear Keychain</div><div class="price">₹50</div></div>
+        </a>
+        <a href="product.html?p=keychain-sunflower" class="card">
+          <img src="assets/keychain_sunflower.png" alt="Sunflower keychain">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-sunflower">♥</button>
+          <div class="card-info"><div class="name">Sunflower Keychain</div><div class="price">₹45</div></div>
+        </a>
+        <a href="product.html?p=keychain-lily" class="card">
+          <img src="assets/keychain_lily.png" alt="Lily keychain">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-lily">♥</button>
+          <div class="card-info"><div class="name">Lily Keychain</div><div class="price">₹45</div></div>
+        </a>
+        <a href="product.html?p=keychain-evileye" class="card">
+          <img src="assets/keychain_evileye.png" alt="Evil Eye keychain">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-evileye">♥</button>
+          <div class="card-info"><div class="name">Evil Eye Keychain</div><div class="price">₹45</div></div>
+        </a>
+        <a href="product.html?p=keychain-daisy" class="card">
+          <img src="assets/keychain_daisy.png" alt="Pink Daisy keychain">
+          <span class="card-tag">Keychain</span>
+          <button class="card-heart" data-id="keychain-daisy">♥</button>
+          <div class="card-info"><div class="name">Daisy Keychain</div><div class="price">₹45</div></div>
+        </a>
+
+        <!-- PAGE 4: Desk Decor (25 to 32) -->
+        <a href="product.html?p=flowerpot" class="card">
+          <img src="assets/flowerpot.jpg" alt="Chenille daisy in a mini fabric pot">
+          <span class="card-tag">Decor</span>
+          <button class="card-heart" data-id="flowerpot">♥</button>
+          <div class="card-info"><div class="name">Desk Daisy Pot</div><div class="price">₹250</div></div>
+        </a>
+        <a href="product.html?p=pot-bear-hearts" class="card">
+          <img src="assets/pot_bear_hearts.png" alt="Chenille bear and hearts desk pot">
+          <span class="card-tag">Desk Decor</span>
+          <button class="card-heart" data-id="pot-bear-hearts">♥</button>
+          <div class="card-info"><div class="name">Bear & Hearts Pot</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=pot-sunflower" class="card">
+          <img src="assets/pot_sunflower.png" alt="Chenille sunflower desk pot">
+          <span class="card-tag">Desk Decor</span>
+          <button class="card-heart" data-id="pot-sunflower">♥</button>
+          <div class="card-info"><div class="name">Sunflower Desk Pot</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=pot-pink-daisy" class="card">
+          <img src="assets/pot_pink_daisy.png" alt="Chenille pink daisy desk pot">
+          <span class="card-tag">Desk Decor</span>
+          <button class="card-heart" data-id="pot-pink-daisy">♥</button>
+          <div class="card-info"><div class="name">Pink Daisy Desk Pot</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=pot-blue-hydrangea" class="card">
+          <img src="assets/pot_blue_hydrangea.png" alt="Chenille blue hydrangea desk pot">
+          <span class="card-tag">Desk Decor</span>
+          <button class="card-heart" data-id="pot-blue-hydrangea">♥</button>
+          <div class="card-info"><div class="name">Blue Hydrangea Pot</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=pot-white-daisy" class="card">
+          <img src="assets/pot_white_daisy.png" alt="Chenille white daisy desk pot on study table">
+          <span class="card-tag">Desk Decor</span>
+          <button class="card-heart" data-id="pot-white-daisy">♥</button>
+          <div class="card-info"><div class="name">White Daisy Desk Pot</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=pot-pink-daisy-2" class="card">
+          <img src="assets/pot_pink_daisy.png" alt="Chenille pink daisy desk pot duplicate">
+          <span class="card-tag">Desk Decor</span>
+          <button class="card-heart" data-id="pot-pink-daisy-2">♥</button>
+          <div class="card-info"><div class="name">Pink Daisy Desk Pot (Twin)</div><div class="price">₹300</div></div>
+        </a>
+        <a href="product.html?p=pot-white-daisy-2" class="card">
+          <img src="assets/pot_white_daisy.png" alt="Chenille white daisy desk pot duplicate">
+          <span class="card-tag">Desk Decor</span>
+          <button class="card-heart" data-id="pot-white-daisy-2">♥</button>
+          <div class="card-info"><div class="name">White Daisy Desk Pot (Twin)</div><div class="price">₹300</div></div>
+        </a>
+      </div>
+
+      <div class="pagination">
+        <button class="page-btn" data-page="1">1</button>
+        <button class="page-btn" data-page="2">2</button>
+        <button class="page-btn" data-page="3">3</button>
+        <button class="page-btn" data-page="4">4</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <div class="foot-logo">Cheniflora</div>
+      <p style="color:#D8B9C5; font-size:.86rem; max-width:260px;">Handmade chenille flowers and keepsakes that never fade.</p>
+    </div>
+    <div><h4>Shop</h4><a href="shop.html">All Products</a><a href="build-gift.html">Build a Gift</a><a href="occasions.html">Occasions</a></div>
+    <div><h4>Company</h4><a href="story.html">Our Story</a><a href="contact.html">Contact</a></div>
+    <div>
+      <h4>Stay in touch</h4>
+      <form class="foot-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Your email" required>
+        <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="container foot-bottom">© 2026 Cheniflora. Handmade in India.</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/910000000000" target="_blank">💬</a>
+<script src="main.js"></script>
+</body>
+</html>

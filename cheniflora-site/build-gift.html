@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build a Gift — Cheniflora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-decor-1" aria-hidden="true"></div>
+  <div class="bg-decor-2" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="logo">
+      <span class="logo-icon">🌸</span>
+      <span class="logo-text">Cheniflora</span>
+    </button>
+    <button class="nav-toggle" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-links">
+      <a href="shop.html">Shop</a>
+      <a href="build-gift.html" class="active">Build a Gift</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- Search Bar -->
+    <div class="nav-search">
+      <input type="text" id="navSearchInput" placeholder="Search flowers, keychains...">
+      <button id="navSearchBtn" aria-label="Search">🔍</button>
+    </div>
+    <div class="nav-icons">
+      <button class="icon-btn wish-btn" aria-label="Wishlist">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="badge wish-badge">0</span>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge cart-badge">0</span>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme" data-theme="light">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a> / Build a Gift</div>
+    <h1>Build your gift</h1>
+    <p style="margin-top:10px;">Pick a flower, a colour, and a wrap. Watch the price and the preview update as you go.</p>
+  </div>
+</div>
+
+<section style="padding-top:50px;">
+  <div class="container">
+    <div class="steps-row" id="stepsRow">
+      <div class="step-pill active" data-step="1">① Flower</div>
+      <div class="step-pill" data-step="2">② Colour</div>
+      <div class="step-pill" data-step="3">③ Add-ons</div>
+      <div class="step-pill" data-step="4">④ Wrap</div>
+    </div>
+
+    <div class="builder-layout">
+      <div>
+        <div class="build-section">
+          <h3>1 · Choose your flower</h3>
+          <p class="hint">Single stem ₹80 each · big bouquet (5–6 stems) ₹400–450 · small bouquet (3 stems) ₹250–350</p>
+          <div class="chip-row" id="flowerChips">
+            <div class="opt-chip selected" data-type="single" data-base="80">Single Stem — ₹80</div>
+            <div class="opt-chip" data-type="small" data-base="280">Small Bouquet (3 stems) — ₹280</div>
+            <div class="opt-chip" data-type="big" data-base="420">Big Bouquet (5–6 stems) — ₹420</div>
+          </div>
+        </div>
+
+        <div class="build-section">
+          <h3>2 · Pick a colour</h3>
+          <p class="hint">Every flower is twisted fresh in the colour you choose.</p>
+          <div class="swatch-row">
+            <div class="swatch selected" style="background:#7A1F3D;" data-colour="Wine"></div>
+            <div class="swatch" style="background:#E0526B;" data-colour="Red"></div>
+            <div class="swatch" style="background:#F4C6D8;" data-colour="Blush Pink"></div>
+            <div class="swatch" style="background:#D9A441;" data-colour="Gold"></div>
+            <div class="swatch" style="background:#9B7FC7;" data-colour="Lavender"></div>
+            <div class="swatch" style="background:#3656C9;" data-colour="Royal Blue"></div>
+          </div>
+        </div>
+
+        <div class="build-section">
+          <h3>3 · Add a keychain (optional)</h3>
+          <p class="hint">Pair your flowers with a keychain charm — ₹45 to ₹50 each.</p>
+          <div class="chip-row" id="addonChips">
+            <div class="opt-chip" data-addon="none" data-price="0">No keychain</div>
+            <div class="opt-chip" data-addon="bear" data-price="50">Bear Keychain — ₹50</div>
+            <div class="opt-chip" data-addon="football" data-price="45">Football Keychain — ₹45</div>
+            <div class="opt-chip" data-addon="fish" data-price="45">Fish Keychain — ₹45</div>
+            <div class="opt-chip" data-addon="sunflower" data-price="45">Sunflower Keychain — ₹45</div>
+            <div class="opt-chip" data-addon="lily" data-price="45">Lily Keychain — ₹45</div>
+            <div class="opt-chip" data-addon="evileye" data-price="45">Evil Eye Keychain — ₹45</div>
+            <div class="opt-chip" data-addon="daisy" data-price="45">Daisy Keychain — ₹45</div>
+            <div class="opt-chip" data-addon="magnet" data-price="150">Fridge Magnet — ₹150</div>
+          </div>
+        </div>
+
+        <div class="build-section">
+          <h3>4 · Gift wrap</h3>
+          <p class="hint">Add ribbon-wrapped cellophane packaging for ₹50.</p>
+          <div class="chip-row" id="wrapChips">
+            <div class="opt-chip selected" data-wrap="none" data-price="0">No wrap, just the flowers</div>
+            <div class="opt-chip" data-wrap="yes" data-price="50">Gift Wrap + Ribbon — ₹50</div>
+          </div>
+        </div>
+
+        <div class="build-section">
+          <h3>Quantity</h3>
+          <div class="count-row">
+            <button class="count-btn" id="qtyMinus">−</button>
+            <span id="qtyVal" style="font-weight:600; min-width:20px; text-align:center;">1</span>
+            <button class="count-btn" id="qtyPlus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="preview-card">
+        <div class="preview-photo">
+          <img id="previewImg" src="assets/flowers_mixed.jpg" alt="Live preview of your gift">
+        </div>
+        <div class="preview-line"><span>Flower</span><span id="lineFlower">Single Stem</span></div>
+        <div class="preview-line"><span>Colour</span><span id="lineColour">Wine</span></div>
+        <div class="preview-line"><span>Add-on</span><span id="lineAddon">None</span></div>
+        <div class="preview-line"><span>Wrap</span><span id="lineWrap">None</span></div>
+        <div class="preview-line"><span>Quantity</span><span id="lineQty">1</span></div>
+        <div class="preview-total"><span>Total</span><span class="amt">₹<span id="totalPrice">80</span></span></div>
+        <button class="btn btn-primary" style="width:100%; justify-content:center;" id="addToCartBtn">Add to Cart</button>
+        <p style="font-size:.78rem; margin-top:12px;">Made fresh after you order — usually ships in 2–3 days.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-grid">
+    <div><div class="foot-logo">Cheniflora</div><p style="color:#D8B9C5; font-size:.86rem; max-width:260px;">Handmade chenille flowers and keepsakes that never fade.</p></div>
+    <div><h4>Shop</h4><a href="shop.html">All Products</a><a href="build-gift.html">Build a Gift</a><a href="occasions.html">Occasions</a></div>
+    <div><h4>Company</h4><a href="story.html">Our Story</a><a href="contact.html">Contact</a></div>
+    <div>
+      <h4>Stay in touch</h4>
+      <form class="foot-form" onsubmit="event.preventDefault();"><input type="email" placeholder="Your email" required><button class="btn btn-primary btn-sm" type="submit">Subscribe</button></form>
+    </div>
+  </div>
+  <div class="container foot-bottom">© 2026 Cheniflora. Handmade in India.</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/910000000000" target="_blank">💬</a>
+<script src="main.js"></script>
+<script>
+const flowerImages = {
+  single: 'assets/flowers_mixed.jpg',
+  small: 'assets/wrap_4.jpg',
+  big: 'assets/bouquet_blue.jpg'
+};
+const addonImages = {
+  bear: 'assets/keychain_4.jpg',
+  football: 'assets/keychain_2.jpg',
+  fish: 'assets/keychain_1.jpg',
+  sunflower: 'assets/keychain_sunflower.png',
+  lily: 'assets/keychain_lily.png',
+  evileye: 'assets/keychain_evileye.png',
+  daisy: 'assets/keychain_daisy.png',
+  magnet: 'assets/flowerpot.jpg'
+};
+
+let state = { flowerType:'single', flowerBase:80, colour:'Wine', addon:'none', addonPrice:0, wrap:'none', wrapPrice:0, qty:1 };
+
+function selectChip(container, selector, cb){
+  document.querySelectorAll(container).forEach(c => c.addEventListener('click', () => {
+    document.querySelectorAll(container).forEach(x=>x.classList.remove('selected'));
+    c.classList.add('selected');
+    cb(c);
+    updateTotal();
+  }));
+}
+
+selectChip('#flowerChips .opt-chip', null, (c) => {
+  state.flowerType = c.dataset.type;
+  state.flowerBase = Number(c.dataset.base);
+  document.getElementById('lineFlower').textContent = c.textContent.split(' — ')[0];
+  document.getElementById('previewImg').src = flowerImages[state.flowerType];
+  setStep(2);
+});
+
+document.querySelectorAll('.swatch').forEach(s => s.addEventListener('click', () => {
+  document.querySelectorAll('.swatch').forEach(x=>x.classList.remove('selected'));
+  s.classList.add('selected');
+  state.colour = s.dataset.colour;
+  document.getElementById('lineColour').textContent = state.colour;
+  setStep(3);
+}));
+
+selectChip('#addonChips .opt-chip', null, (c) => {
+  state.addon = c.dataset.addon;
+  state.addonPrice = Number(c.dataset.price);
+  document.getElementById('lineAddon').textContent = c.textContent.split(' — ')[0];
+  if (addonImages[state.addon]) document.getElementById('previewImg').src = addonImages[state.addon];
+  else document.getElementById('previewImg').src = flowerImages[state.flowerType];
+  setStep(4);
+});
+
+selectChip('#wrapChips .opt-chip', null, (c) => {
+  state.wrap = c.dataset.wrap;
+  state.wrapPrice = Number(c.dataset.price);
+  document.getElementById('lineWrap').textContent = c.textContent.split(' — ')[0];
+});
+
+document.getElementById('qtyMinus').addEventListener('click', () => { state.qty = Math.max(1, state.qty-1); document.getElementById('qtyVal').textContent = state.qty; document.getElementById('lineQty').textContent = state.qty; updateTotal(); });
+document.getElementById('qtyPlus').addEventListener('click', () => { state.qty = Math.min(20, state.qty+1); document.getElementById('qtyVal').textContent = state.qty; document.getElementById('lineQty').textContent = state.qty; updateTotal(); });
+
+function setStep(n){
+  document.querySelectorAll('.step-pill').forEach(p => {
+    const s = Number(p.dataset.step);
+    p.classList.remove('active','done');
+    if (s < n) p.classList.add('done');
+    if (s === n) p.classList.add('active');
+  });
+}
+
+function updateTotal(){
+  const total = (state.flowerBase + state.addonPrice + state.wrapPrice) * state.qty;
+  document.getElementById('totalPrice').textContent = total;
+}
+
+document.getElementById('addToCartBtn').addEventListener('click', () => {
+  const cartKey = 'cheniflora_cart';
+  let cart = [];
+  try {
+    cart = JSON.parse(localStorage.getItem(cartKey)) || [];
+  } catch (e) {
+    cart = [];
+  }
+
+  const customPrice = state.flowerBase + state.addonPrice + state.wrapPrice;
+  const customImg = document.getElementById('previewImg').getAttribute('src') || 'assets/bouquet_pink.jpg';
+  const customId = `custom-${state.flowerType}-${state.addon || 'none'}-${state.wrap || 'none'}`;
+
+  const existing = cart.find(item => item.id === customId);
+  if (existing) {
+    existing.qty += state.qty;
+  } else {
+    cart.push({
+      id: customId,
+      name: `Custom Gift Set (${state.flowerType.charAt(0).toUpperCase() + state.flowerType.slice(1)})`,
+      price: customPrice,
+      img: customImg,
+      qty: state.qty
+    });
+  }
+
+  localStorage.setItem(cartKey, JSON.stringify(cart));
+
+  const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+  localStorage.setItem('cheniflora_cart_count', totalQty);
+  
+  const badge = document.querySelector('.cart-badge');
+  if (badge) badge.textContent = totalQty;
+
+  document.getElementById('addToCartBtn').textContent = 'Added ✓';
+  setTimeout(() => { document.getElementById('addToCartBtn').textContent = 'Add to Cart'; }, 1600);
+});
+
+updateTotal();
+</script>
+</body>
+</html>

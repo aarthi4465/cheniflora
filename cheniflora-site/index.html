@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cheniflora — Flowers Fade. Memories Don't.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-decor-1" aria-hidden="true"></div>
+  <div class="bg-decor-2" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="logo">
+      <span class="logo-icon">🌸</span>
+      <span class="logo-text">Cheniflora</span>
+    </button>
+    <button class="nav-toggle" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-links">
+      <a href="shop.html">Shop</a>
+      <a href="build-gift.html">Build a Gift</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- Search Bar -->
+    <div class="nav-search">
+      <input type="text" id="navSearchInput" placeholder="Search flowers, keychains...">
+      <button id="navSearchBtn" aria-label="Search">🔍</button>
+    </div>
+    <div class="nav-icons">
+      <button class="icon-btn wish-btn" aria-label="Wishlist">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="badge wish-badge">0</span>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge cart-badge">0</span>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme" data-theme="light">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      
+    </div>
+  </div>
+</nav>
+
+<header class="hero-slider-section">
+  <div class="hero-slider">
+    <!-- Slide 1: Peach Lily Grand Bouquet -->
+    <div class="hero-slide active" data-slide="0">
+      <div class="hero-slide-bg" style="background-image: url('assets/bouquet_big_peach.png');"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content container">
+        <div class="hero-slide-text">
+          <span class="slide-eyebrow">Premium Collection</span>
+          <h1 class="slide-title">The Grand Bouquet.<br>Made to Impress.</h1>
+          <p class="slide-subtitle">Five full-bloom peach chenille lilies wrapped in luxury kraft paper — a statement gift that never wilts.</p>
+          <div class="slide-cta">
+            <a href="product.html?p=bouquet-big-peach" class="btn btn-primary btn-lg">Shop Now — ₹500</a>
+            <a href="shop.html" class="btn btn-ghost btn-lg">View All Bouquets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Sunflower Wrapped Bouquet -->
+    <div class="hero-slide" data-slide="1">
+      <div class="hero-slide-bg" style="background-image: url('assets/wrap_sunflower_big.jpg');"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content container">
+        <div class="hero-slide-text">
+          <span class="slide-eyebrow">Single Stem Wrapped</span>
+          <h1 class="slide-title">Sunshine,<br>Gift-Wrapped.</h1>
+          <p class="slide-subtitle">A full sunflower with daisy accents wrapped in black & gold paper with a pearl bow. Bold. Beautiful. Handmade.</p>
+          <div class="slide-cta">
+            <a href="product.html?p=wrap-sunflower-big" class="btn btn-primary btn-lg">Get Yours — ₹200</a>
+            <a href="build-gift.html" class="btn btn-ghost btn-lg">Build a Gift</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Blue Lily Wrapped -->
+    <div class="hero-slide" data-slide="2">
+      <div class="hero-slide-bg" style="background-image: url('assets/wrap_blue_lily.png');"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content container">
+        <div class="hero-slide-text">
+          <span class="slide-eyebrow">Single Stem Wrapped</span>
+          <h1 class="slide-title">Something Blue.<br>Something New.</h1>
+          <p class="slide-subtitle">A sky-blue chenille lily wrapped in heart-print paper with a soft satin bow — perfect for any occasion.</p>
+          <div class="slide-cta">
+            <a href="product.html?p=wrap-blue-lily" class="btn btn-primary btn-lg">Order — ₹140</a>
+            <a href="occasions.html" class="btn btn-ghost btn-lg">Shop by Occasion</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4: Lily Keychain -->
+    <div class="hero-slide" data-slide="3">
+      <div class="hero-slide-bg" style="background-image: url('assets/keychain_lily.png');"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content container">
+        <div class="hero-slide-text">
+          <span class="slide-eyebrow">Keychains — From ₹45</span>
+          <h1 class="slide-title">A Flower<br>For Your Keys.</h1>
+          <p class="slide-subtitle">Pocket-sized chenille keychains — the perfect small gift that says a lot. Starting at just ₹45.</p>
+          <div class="slide-cta">
+            <a href="product.html?p=keychain-lily" class="btn btn-primary btn-lg">Shop Keychains</a>
+            <a href="shop.html" class="btn btn-ghost btn-lg">Explore All</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5: Pink Daisy Pot -->
+    <div class="hero-slide" data-slide="4">
+      <div class="hero-slide-bg" style="background-image: url('assets/pot_pink_daisy.png');"></div>
+      <div class="hero-slide-overlay"></div>
+      <div class="hero-slide-content container">
+        <div class="hero-slide-text">
+          <span class="slide-eyebrow">Desk Decor</span>
+          <h1 class="slide-title">Brighten<br>Your Desk.</h1>
+          <p class="slide-subtitle">Handcrafted chenille flower pots that never need watering. A tiny bloom that stays on your desk forever.</p>
+          <div class="slide-cta">
+            <a href="product.html?p=pot-pink-daisy" class="btn btn-primary btn-lg">Get One — ₹300</a>
+            <a href="shop.html" class="btn btn-ghost btn-lg">All Desk Decor</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Arrows -->
+  <button class="slider-arrow prev" aria-label="Previous Slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="15 18 9 12 15 6"></polyline>
+    </svg>
+  </button>
+  <button class="slider-arrow next" aria-label="Next Slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </button>
+
+  <!-- Slider Indicators -->
+  <div class="slider-indicators">
+    <button class="indicator active" data-index="0" aria-label="Slide 1"></button>
+    <button class="indicator" data-index="1" aria-label="Slide 2"></button>
+    <button class="indicator" data-index="2" aria-label="Slide 3"></button>
+    <button class="indicator" data-index="3" aria-label="Slide 4"></button>
+    <button class="indicator" data-index="4" aria-label="Slide 5"></button>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track">
+    <span>Handmade, stem by stem</span><span>Starting at just ₹40</span><span>Never fades, never wilts</span><span>Made in small batches</span><span>Free custom message card</span>
+    <span>Handmade, stem by stem</span><span>Starting at just ₹40</span><span>Never fades, never wilts</span><span>Made in small batches</span><span>Free custom message card</span>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Why Chenille</span>
+      <h2>Soft thread. Real staying power.</h2>
+    </div>
+    <div class="grid-6">
+      <div class="story-card reveal"><span class="ic">✋</span><h3>Hand-twisted</h3><p>Every petal is wound around wire by hand — no two flowers come out exactly alike.</p></div>
+      <div class="story-card reveal"><span class="ic">🎓</span><h3>Student-friendly pricing</h3><p>Gifting starts at ₹40, so saying it with flowers doesn't mean skipping a meal.</p></div>
+      <div class="story-card reveal"><span class="ic">♾️</span><h3>Lasts forever</h3><p>No water, no wilting. The bouquet you give on day one looks the same on day 500.</p></div>
+      <div class="story-card reveal"><span class="ic">🌱</span><h3>Eco-friendly</h3><p>Reusable materials, no cut stems — nothing here was grown just to be thrown away.</p></div>
+      <div class="story-card reveal"><span class="ic">🎁</span><h3>Personalised gifting</h3><p>Pick the colours, add a keychain, write a note — every order is built for one person.</p></div>
+      <div class="story-card reveal"><span class="ic">🧵</span><h3>Made with real care</h3><p>Small batches, checked petal by petal before they're wrapped and sent out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream-deep);">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Featured Collections</span>
+      <h2>From ₹45 keychains to ₹500 grand bouquets — all handmade with love.</h2>
+    </div>
+    <div class="premium-grid reveal">
+      <a href="product.html?p=keychain-sunflower" class="card">
+        <img src="assets/keychain_sunflower.png" alt="Sunflower keychain">
+        <span class="card-tag">Keychain</span>
+        <button class="card-heart" data-id="keychain-sunflower" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Sunflower Keychain</div><div class="price">₹45</div></div>
+      </a>
+      <a href="product.html?p=keychain-lily" class="card">
+        <img src="assets/keychain_lily.png" alt="Lily keychain">
+        <span class="card-tag">Keychain</span>
+        <button class="card-heart" data-id="keychain-lily" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Lily Keychain</div><div class="price">₹45</div></div>
+      </a>
+      <a href="product.html?p=keychain-evileye" class="card">
+        <img src="assets/keychain_evileye.png" alt="Evil Eye keychain">
+        <span class="card-tag">Keychain</span>
+        <button class="card-heart" data-id="keychain-evileye" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Evil Eye Keychain</div><div class="price">₹45</div></div>
+      </a>
+      <a href="product.html?p=keychain-daisy" class="card">
+        <img src="assets/keychain_daisy.png" alt="Pink Daisy keychain">
+        <span class="card-tag">Keychain</span>
+        <button class="card-heart" data-id="keychain-daisy" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Daisy Keychain</div><div class="price">₹45</div></div>
+      </a>
+      <a href="product.html?p=wrap-yellow-lily" class="card">
+        <img src="assets/wrap_yellow_lily.png" alt="Yellow lily wrapped in cream paper with yellow ribbon">
+        <span class="card-tag">Single Stem Wrapped</span>
+        <button class="card-heart" data-id="wrap-yellow-lily" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Yellow Lily, Wrapped</div><div class="price">₹140</div></div>
+      </a>
+      <a href="product.html?p=wrap-blue-lily" class="card">
+        <img src="assets/wrap_blue_lily.png" alt="Blue lily wrapped in heart-print paper with blue ribbon">
+        <span class="card-tag">Single Stem Wrapped</span>
+        <button class="card-heart" data-id="wrap-blue-lily" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Blue Lily, Wrapped</div><div class="price">₹140</div></div>
+      </a>
+      <a href="product.html?p=wrap-purple-lily" class="card">
+        <img src="assets/wrap_purple_lily.jpg" alt="Purple lily wrapped in lavender paper with white organza bow">
+        <span class="card-tag">Single Stem Wrapped</span>
+        <button class="card-heart" data-id="wrap-purple-lily" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Purple Lily, Wrapped</div><div class="price">₹140</div></div>
+      </a>
+      <a href="product.html?p=wrap-sunflower-big" class="card">
+        <img src="assets/wrap_sunflower_big.jpg" alt="Sunflower bouquet wrapped in black and gold paper with pearl bow">
+        <span class="card-tag">Single Stem Wrapped</span>
+        <button class="card-heart" data-id="wrap-sunflower-big" aria-label="Add to wishlist">♥</button>
+        <div class="card-info"><div class="name">Sunflower Bouquet, Wrapped</div><div class="price">₹200</div></div>
+      </a>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="shop.html" class="btn btn-secondary">See the full shop</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Build a Gift</span>
+      <h2>Watch the price update as you build it — for real.</h2>
+      <p style="margin-top:14px;">Pick a flower colour, add a keychain, choose your wrap. The total recalculates live, no surprises at checkout.</p>
+    </div>
+    <div style="text-align:center;">
+      <a href="build-gift.html" class="btn btn-primary">Start Building →</a>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream-deep);">
+  <div class="container">
+    <div class="section-head center"><span class="eyebrow">Occasions</span><h2>Gifting for every reason</h2></div>
+    <div class="occ-row reveal">
+      <a class="occ-card" style="background-image: linear-gradient(to top, rgba(46, 42, 44, 0.85), rgba(46, 42, 44, 0.3)), url('assets/occ_birthday.png');" href="occasions.html#birthday"><h4>Birthday</h4><span>Shop →</span></a>
+      <a class="occ-card" style="background-image: linear-gradient(to top, rgba(46, 42, 44, 0.85), rgba(46, 42, 44, 0.3)), url('assets/occ_anniversary.png');" href="occasions.html#anniversary"><h4>Anniversary</h4><span>Shop →</span></a>
+      <a class="occ-card" style="background-image: linear-gradient(to top, rgba(46, 42, 44, 0.85), rgba(46, 42, 44, 0.3)), url('assets/occ_friendship.png');" href="occasions.html#friendship"><h4>Friendship</h4><span>Shop →</span></a>
+      <a class="occ-card" style="background-image: linear-gradient(to top, rgba(46, 42, 44, 0.85), rgba(46, 42, 44, 0.3)), url('assets/occ_graduation.png');" href="occasions.html#graduation"><h4>Graduation</h4><span>Shop →</span></a>
+      <a class="occ-card" style="background-image: linear-gradient(to top, rgba(46, 42, 44, 0.85), rgba(46, 42, 44, 0.3)), url('assets/occ_mothersday.png');" href="occasions.html#mothers-day"><h4>Mother's Day</h4><span>Shop →</span></a>
+      <a class="occ-card" style="background-image: linear-gradient(to top, rgba(46, 42, 44, 0.85), rgba(46, 42, 44, 0.3)), url('assets/flowerpot.jpg');" href="occasions.html#thank-you"><h4>Thank You</h4><span>Shop →</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What People Say</span>
+      <h2>Real notes from real gifting moments</h2>
+    </div>
+    
+    <div class="testimonials-carousel-container">
+      <button class="carousel-arrow prev" id="test-prev" aria-label="Previous Testimonial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      
+      <div class="testimonials-track-wrapper">
+        <div class="testimonials-track" id="test-track">
+          <div class="test-card-slide">
+            <div class="test-card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">Ordered the bear keychain set for my roommate's birthday — she still has it on her hostel keys a year later.</p>
+              <div class="test-foot">
+                <div class="avatar">RP</div>
+                <div>
+                  <div class="name">Riya P.</div>
+                  <div class="occ">Birthday, Pune</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="test-card-slide">
+            <div class="test-card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">My boyfriend is not a flowers person but even he kept the lily bouquet on his study table for months.</p>
+              <div class="test-foot">
+                <div class="avatar">SK</div>
+                <div>
+                  <div class="name">Sanya K.</div>
+                  <div class="occ">Anniversary, Delhi</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="test-card-slide">
+            <div class="test-card">
+              <div class="stars">★★★★☆</div>
+              <p class="quote">Got the desk daisy pot for my desk at my internship. Cheapest gift that's gotten the most compliments.</p>
+              <div class="test-foot">
+                <div class="avatar">AV</div>
+                <div>
+                  <div class="name">Aman V.</div>
+                  <div class="occ">Thank You, Bengaluru</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="test-card-slide">
+            <div class="test-card">
+              <div class="stars">★★★★★</div>
+              <p class="quote">The customized blue bouquet was the highlight of our convocation! Everyone was asking where I got it.</p>
+              <div class="test-foot">
+                <div class="avatar">JM</div>
+                <div>
+                  <div class="name">Jatin M.</div>
+                  <div class="occ">Graduation, Mumbai</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <button class="carousel-arrow next" id="test-next" aria-label="Next Testimonial">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <div class="carousel-indicators" id="test-indicators">
+      <button class="indicator active" data-index="0" aria-label="Go to testimonial 1"></button>
+      <button class="indicator" data-index="1" aria-label="Go to testimonial 2"></button>
+      <button class="indicator" data-index="2" aria-label="Go to testimonial 3"></button>
+      <button class="indicator" data-index="3" aria-label="Go to testimonial 4"></button>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--cream-deep);">
+  <div class="container">
+    <div class="section-head center"><span class="eyebrow">Our Story</span><h2>Started on a hostel desk, one pipe cleaner at a time</h2></div>
+    <div class="founder reveal">
+      <img src="assets/flowers_mixed.jpg" alt="Mixed chenille flower heads on a table">
+      <div>
+        <blockquote>"I made my first chenille flower during a boring lecture in second year — by the time the class ended I'd made six and given away four."</blockquote>
+        <p>That's how Cheniflora actually started. No business plan, just a box of pipe cleaners and a habit that wouldn't stop. Three years later it's still small — every order checked by hand before it ships.</p>
+        <a href="story.html" class="btn btn-secondary" style="margin-top:20px;">Read the full story →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-grid">
+    <div>
+      <div class="foot-logo">Cheniflora</div>
+      <p style="color:#D8B9C5; font-size:.86rem; max-width:260px;">Handmade chenille flowers and keepsakes that never fade. Made in small batches, checked by hand.</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <a href="shop.html">All Products</a>
+      <a href="build-gift.html">Build a Gift</a>
+      <a href="occasions.html">Occasions</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html#custom">Custom Orders</a>
+    </div>
+    <div>
+      <h4>Stay in touch</h4>
+      <form class="foot-form" onsubmit="event.preventDefault();">
+        <input type="email" placeholder="Your email" required>
+        <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+  <div class="container foot-bottom">© 2026 Cheniflora. Handmade in India.</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/910000000000" aria-label="Chat on WhatsApp" target="_blank">💬</a>
+
+<script src="main.js"></script>
+</body>
+</html>

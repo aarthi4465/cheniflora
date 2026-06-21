@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Cheniflora</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-decor-1" aria-hidden="true"></div>
+  <div class="bg-decor-2" aria-hidden="true"></div>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <button class="logo">
+      <span class="logo-icon">🌸</span>
+      <span class="logo-text">Cheniflora</span>
+    </button>
+    <button class="nav-toggle" aria-label="Menu">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <div class="nav-links">
+      <a href="shop.html">Shop</a>
+      <a href="build-gift.html">Build a Gift</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="story.html">Our Story</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+    <!-- Search Bar -->
+    <div class="nav-search">
+      <input type="text" id="navSearchInput" placeholder="Search flowers, keychains...">
+      <button id="navSearchBtn" aria-label="Search">🔍</button>
+    </div>
+    <div class="nav-icons">
+      <button class="icon-btn wish-btn" aria-label="Wishlist">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+        </svg>
+        <span class="badge wish-badge">0</span>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="Cart">
+        <svg class="nav-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <path d="M16 10a4 4 0 0 1-8 0"></path>
+        </svg>
+        <span class="badge cart-badge">0</span>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme" data-theme="light">
+        <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="page-head">
+  <div class="container">
+    <div class="crumbs"><a href="index.html">Home</a> / Contact</div>
+    <h1>Get in touch</h1>
+    <p style="margin-top:10px;">Questions, custom orders, or just want to say hi — we read every message.</p>
+  </div>
+</div>
+
+<section id="custom">
+  <div class="container contact-layout">
+    <div>
+      <h2 style="font-size:1.6rem; margin-bottom:18px;">Request a custom order</h2>
+      <p style="margin-bottom:24px;">Want a specific colour combo, a bigger bouquet, or flowers matched to an outfit? Tell us what you have in mind.</p>
+      <form class="contact-form">
+        <label for="name">Your name</label>
+        <input id="name" type="text" placeholder="Full name" required>
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required>
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" type="tel" placeholder="For faster replies on WhatsApp">
+        <label for="occasion">Occasion</label>
+        <select id="occasion">
+          <option>Birthday</option><option>Anniversary</option><option>Friendship</option>
+          <option>Graduation</option><option>Mother's Day</option><option>Thank You</option><option>Other</option>
+        </select>
+        <label for="budget">Budget range</label>
+        <select id="budget">
+          <option>Under ₹100</option><option>₹100 – ₹300</option><option>₹300 – ₹500</option><option>Above ₹500</option>
+        </select>
+        <label for="details">Tell us what you'd like</label>
+        <textarea id="details" rows="5" placeholder="Colours, flower type, message card text, delivery date..."></textarea>
+        <button class="btn btn-primary" type="submit">Send Request</button>
+        <div class="form-success">Thanks! We'll get back to you within 24 hours.</div>
+      </form>
+    </div>
+
+    <div>
+      <h2 style="font-size:1.6rem; margin-bottom:18px;">Other ways to reach us</h2>
+      <div class="story-card" style="margin-bottom:16px;">
+        <span class="ic">💬</span><h3>WhatsApp</h3><p>Fastest way to reach us for quick questions or order updates.</p>
+        <a href="https://wa.me/910000000000" class="btn btn-secondary btn-sm" style="margin-top:14px;" target="_blank">Chat on WhatsApp</a>
+      </div>
+      <div class="story-card" style="margin-bottom:16px;">
+        <span class="ic">✉️</span><h3>Email</h3><p>hello@cheniflora.in</p>
+      </div>
+      <div class="story-card">
+        <span class="ic">📦</span><h3>Shipping</h3><p>Most orders ship within 2–3 days. Pan-India delivery via trusted courier partners.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-grid">
+    <div><div class="foot-logo">Cheniflora</div><p style="color:#D8B9C5; font-size:.86rem; max-width:260px;">Handmade chenille flowers and keepsakes that never fade.</p></div>
+    <div><h4>Shop</h4><a href="shop.html">All Products</a><a href="build-gift.html">Build a Gift</a><a href="occasions.html">Occasions</a></div>
+    <div><h4>Company</h4><a href="story.html">Our Story</a><a href="contact.html">Contact</a></div>
+    <div><h4>Stay in touch</h4><form class="foot-form" onsubmit="event.preventDefault();"><input type="email" placeholder="Your email" required><button class="btn btn-primary btn-sm" type="submit">Subscribe</button></form></div>
+  </div>
+  <div class="container foot-bottom">© 2026 Cheniflora. Handmade in India.</div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/910000000000" target="_blank">💬</a>
+<script src="main.js"></script>
+</body>
+</html>
